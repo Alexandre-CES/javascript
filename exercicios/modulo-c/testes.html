@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes</title>
+</head>
+<body>
+    <h1>Somar</h1>
+    <input type="number" name="t1" id="t1">
+    <input type="number" name="t2" id="t2">
+    <input type="button" value="Multiplicar" onclick="multiplicar()">
+
+    <div id="res">Resultado</div>
+
+    <h1>Formulário</h1>
+    <form autocomplete="off" method="get">
+        <label for="nome">Nome:<input type="text" name="nome" id="nome"></label>
+        <input type="submit" value="Enviar" onclick="click()">
+        <p id="pa">s</p>
+    </form>
+    <script>
+
+        function multiplicar(){
+            var t1 = document.getElementById('t1')
+            var t2 = document.getElementById('t2')
+            var res = document.getElementById('res')
+
+            var n1 = Number(t1.value) //value TEM que estar minúsculo
+            var n2 = Number(t2.value)
+
+            var multiplicar = n1 * n2
+
+            res.innerText = multiplicar
+        }
+
+        function click(){
+            var nome = document.getElementById('nome')
+            var pa = document.getElementById('pa')
+
+            pa.innerText = nome
+        }
+        
+    </script>
+</body>
+</html>
