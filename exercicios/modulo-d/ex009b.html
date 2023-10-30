@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"Desafio"</title>
+</head>
+<body>
+    <input type="button" value="Cavalos" onclick="cavalos()">
+    <p id="cavalos">s</p>
+
+    <script>
+        function cavalos(){
+            var carlinhos = 'chupador de cavalos'
+            var cavalos = document.getElementById('cavalos')
+            
+                cavalos.innerText = 'Carlinhos chupa cavalos'
+
+            if (carlinhos == 'chupador de cavalos'){
+                cavalos.innerText += ' carlinhos chupa vários cavalos, carlinhos chupa vários homens. Carlinhos bateu o recorde do maior chupador de semen de cavalos'
+            } else{
+                cavalos.innerText = 'Você não é carlinhos'
+            }
+        }
+
+    </script>
+</body>
+</html>
