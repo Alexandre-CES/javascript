@@ -15,7 +15,7 @@
 
     <h1>Formulário</h1>
     <form autocomplete="off" method="get">
-        <label for="nome">Nome:<input type="text" name="nome" id="nome"></label>
+        <label for="nome">Nome:<input type="text" name="nome" id="inome"></label>
         <input type="submit" value="Enviar" onclick="click()">
         <p id="pa">s</p>
     </form>
@@ -32,13 +32,6 @@
             var multiplicar = n1 * n2
 
             res.innerText = multiplicar
-        }
-
-        function click(){
-            var nome = document.getElementById('nome')
-            var pa = document.getElementById('pa')
-
-            pa.innerText = nome
         }
         
     </script>
