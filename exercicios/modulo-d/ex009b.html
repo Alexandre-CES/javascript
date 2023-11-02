@@ -6,23 +6,33 @@
     <title>"Desafio"</title>
 </head>
 <body>
-    <input type="button" value="Cavalos" onclick="cavalos()">
-    <p id="cavalos">s</p>
-
+    
+    <form>
+        <fieldset>
+            <legend>Teste de output</legend>
+            <label for="iescreva">Escreva uma letra de A até E:</label>
+            <input type="text" name="escreva" id="iescreva" minlength="1" maxlength="1"  oninput="letra()">
+        </fieldset>
+        <fieldset>
+            <legend>resultado</legend>
+            <output id="letraescolhida">?</output>
+        </fieldset>
+    </form>
+    <!--Falha-->
     <script>
-        function cavalos(){
-            var carlinhos = 'chupador de cavalos'
-            var cavalos = document.getElementById('cavalos')
-            
-                cavalos.innerText = 'Carlinhos chupa cavalos'
-
-            if (carlinhos == 'chupador de cavalos'){
-                cavalos.innerText += ' carlinhos chupa vários cavalos, carlinhos chupa vários homens. Carlinhos bateu o recorde do maior chupador de semen de cavalos'
-            } else{
-                cavalos.innerText = 'Você não é carlinhos'
+        function letra(){
+            var output = document.getElementById('letraescolhida')
+            var escreva = document.getElementById('iescreva')
+            var res = new String(escreva)
+            switch(res){
+                case 'A':
+                    output.innerText = 'Fogo'
+                    break; 
+                
+                default:
+                    break;
             }
         }
-
     </script>
 </body>
 </html>
