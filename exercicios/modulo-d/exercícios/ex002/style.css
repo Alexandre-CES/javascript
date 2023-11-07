@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html{
+    background-color: rgb(110, 145, 243);
+}
+
+header{
+    text-align: center;
+    background-color: lightgray;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.397);
+}
+
+section{
+    margin: auto;
+    padding: 10px;
+    width: 400px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.377);
+}
+
+section div{
+    margin: 10px 0px;
+}
+
+section div p{
+    margin: 10px 0px;
+}
+
+footer{
+    margin-top: 20px;
+    display: block;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
