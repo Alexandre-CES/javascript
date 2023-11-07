@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Impostos</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora de Impostos</h1>
+    </header>
+    <main>
+        <h2>Preencha os dados abaixo:</h2>
+        <form action="scripts/calculadora.js" method="post">
+            <div>
+                <label for="isalario">Salário:</label>
+                <input type="number" name="salario" id="isalario">
+            </div>
+            <div>
+                <label for="idependentes">Dependentes:</label>
+                <input type="number" name="dependentes" id="idependentes">
+            </div>
+            <input type="button" value="Calcular" onclick="calcular()">
+            <input type="reset" value="Limpar">
+
+            <div id="res">?</div>
+        </form>
+    </main>
+    
+    <script src="scripts/calculadora.js"></script>
+</body>
+</html>

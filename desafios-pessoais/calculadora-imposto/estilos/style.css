@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+:root{
+    --cor1: #a8a220;
+}
+
+body, html{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+header{
+    background-color: var(--cor1);
+}
+
+header h1{
+    text-align: center;
+    color: white;
+}
+
+main{
+    padding: 10px;
+
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.404);
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+main div{
+    margin: 20px 0px;
+}
+
+main form div input#isalario{
+    width: calc(100% - 90px);
+} 
+
+main form div input#idependentes{
+    width: calc(100% - 130px);
+}
