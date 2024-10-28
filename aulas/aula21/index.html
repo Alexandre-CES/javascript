@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos JavaScript</title>
+    <style>
+        aside{
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: #e0bb00;
+            height: 100vh;
+        }
+
+        .titulo{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #aa1188;
+        }
+
+        .alterado-cor-bg{
+            background-color:#fd0206;
+            color: #fffefa;
+        }
+        #texto, #meu-botao{
+            height: 54px;
+            border-radius: 4px;
+            background-color: #fffefa;
+            width: 250px;
+        }
+
+        #meu-botao{
+            background-color: #fd0206;
+            color: #fff;
+            font-size: 24px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="titulo-principal" class="titulo">Exemplo de Seletores de Elemento</h1>
+        <nav>
+            <ul>
+                <li class="menu-item">Início</li>
+                <li class="menu-item">Sobre</li>
+                <li class="menu-item">Contato</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="secao-principal">
+            <h2>Seção Principal</h2>
+            <p class="paragrafo">Este é o primeiro parágrafo da seção principal</p>
+            <p class="paragrafo">Outro parágrafo</p>
+            <input type="text" id="texto">
+            <button id="meu-botao" name="meu-botao">Clique aqui</button>
+        </section>
+        <aside>
+            <h2>Barra Lateral</h2>
+            <p>Parágrafo da barra lateral</p>
+        </aside>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
