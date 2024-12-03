@@ -23,6 +23,10 @@ function mostrarTarefas(){
     tarefas.forEach((tarefa) => {
         const divTarefa = document.createElement('div');
 
+        if (tarefa.status){
+            divTarefa.style.textDecoration = 'line-through'
+        }
+
         const checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
         checkbox.checked = tarefa.status;

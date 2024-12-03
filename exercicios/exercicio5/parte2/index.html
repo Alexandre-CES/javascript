@@ -4,14 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Adicionar tarefa:</h1>
-    <textarea name="descricao" id="descricao" placeholder="Descrição"></textarea>
-    <button id="botao">adicionar</button>
-    <div id="lista-tarefas">
-        Lista está vazia
-    </div>
-    <script src="./index.js"></script>
+    <main>
+        <h1>Lista de tarefas</h1>
+        <section>
+            <h2>Adicionar tarefa:</h2>
+            <div>
+                <textarea name="descricao" id="descricao" placeholder="Descrição"></textarea>
+            </div>
+            <button id="botao">adicionar</button>
+        </section>
+        <section id="tarefas">
+            <h2>Tarefas:</h2>
+            <div id="lista-tarefas">
+                Lista está vazia
+            </div>
+        </section>
+        <script src="./index.js"></script>
+    </main>
 </body>
 </html>
