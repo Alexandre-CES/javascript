@@ -7,9 +7,39 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    
+    <main>
+        <h1>Rede social?</h1>
+        <section id="create-post-section">
+            <h2>Criar post</h2>
+            <div>
+                <label for="input-name">Nome: </label>
+                <input type="text" name="input-name" id="input-name">
+            </div>
+            <div>
+                <label for="input-image">Url da imagem: </label>
+                <input type="text" name="input-image" id="input-image">
+            </div>
+            <div>
+                <textarea id="input-body" placeholder="postagem"></textarea>
+            </div>
+            <button id="post-button">Postar</button>
+        </section>
+        <section id="posts-section">
+            <h2>Posts</h2>
+            <ul id="posts-list">
+                <!--
+                <li>
+                    <div>
+                        <img src="" alt="avatar">
+                        <h3>nome: nome</h3>
+                        <p>corpo do post</p>
+                    </div>
+                </li>
+                -->
+            </ul>
+        </section>
 
+    </main>
     <script src="index.js"></script>
 </body>
 </html>
