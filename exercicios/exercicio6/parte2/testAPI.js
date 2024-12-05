@@ -5,5 +5,5 @@ const catImage = async () => {
 };
 
 catImage().then((img)=>{
-    console.log(img);
+    console.log(img[0].url);
 });
